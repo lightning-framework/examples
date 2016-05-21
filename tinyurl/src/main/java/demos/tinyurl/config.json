@@ -1,0 +1,23 @@
+{
+  "enable_debug_mode": true,
+  "auto_reload_prefixes": [
+    "demos.tinyurl.controllers"
+  ],
+  "scan_prefixes": [
+    "lightning.examples.cas",
+    "demos.tinyurl.controllers"
+  ],
+  "server": {
+    "hmac_key": "SUPERSECRETKEY",
+    "port": 8080,
+    "static_files_path": "demos/tinyurl",
+    "template_files_path": "demos/tinyurl/templates"
+  },
+  "db": {
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "coll144",
+    "name": "tinyurl"
+  }
+}

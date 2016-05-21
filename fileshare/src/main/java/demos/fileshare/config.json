@@ -1,0 +1,23 @@
+{
+  "enable_debug_mode": true,
+  "auto_reload_prefixes": [
+    "demos.fileshare.controllers"
+  ],
+  "scan_prefixes": [
+    "lightning.examples.cas",
+    "demos.fileshare.controllers"
+  ],
+  "server": {
+    "hmac_key": "SUPERSECRETKEY",
+    "port": 8080,
+    "static_files_path": "demos/fileshare/assets",
+    "template_files_path": "demos/fileshare/templates"
+  },
+  "db": {
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "coll144",
+    "name": "fileshare"
+  }
+}
