@@ -1,6 +1,7 @@
 package demos.tinyurl;
 
 import lightning.Lightning;
+import lightning.inject.InjectorModule;
 import lightning.util.Flags;
 
 /**
@@ -9,6 +10,11 @@ import lightning.util.Flags;
 public class TinyUrlApp {
   public static void main(String[] args) throws Exception {
     Flags.parse(args);
-    Lightning.launch(Flags.getFile("config"));
+
+    InjectorModule injector = new InjectorModule();
+    injector.bindAnnotationToInstance(CASHost.class, "netid.rice.edu");
+    injector.bindAnnotationToInstance(CASPath.class, "/cas");
+    injector.bindAnnotationToInstance(CASDomain.class, "@rice.edu");
+    Lightning.launch(Flags.getFile("config"), injector);
   }
 }

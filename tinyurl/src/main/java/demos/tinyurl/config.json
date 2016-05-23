@@ -4,7 +4,7 @@
     "demos.tinyurl.controllers"
   ],
   "scan_prefixes": [
-    "lightning.examples.cas",
+    "lightning.plugins.cas.controllers",
     "demos.tinyurl.controllers"
   ],
   "server": {
